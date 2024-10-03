@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-1 simplify css</title>
+</head>
+
+<body>
+    <template>
+        <style export="/component-resets.css">
+            button {
+                color: red;
+            }
+        </style>
+    </template>
+
+    <icon-button import="/component-resets.css">
+        <template shadowrootmode="open">
+            <button>
+                <span>👍 In shadow!</span>
+            </button>
+        </template>
+    </icon-button>
+
+
+</body>
+
+</html>

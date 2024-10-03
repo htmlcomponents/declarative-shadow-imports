@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b-2 css in light dom</title>
+</head>
+
+<body>
+    <style export="/component-resets.css">
+        button {
+            color: red;
+        }
+    </style>
+
+    <button>
+        <span>👍 In light DOM!</span>
+    </button>
+
+    <icon-button import="/component-resets.css">
+        <template shadowrootmode="open">
+            <button>
+                <span>👍 In shadow!</span>
+            </button>
+        </template>
+    </icon-button>
+
+</body>
+
+</html>

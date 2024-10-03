@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-css</title>
+</head>
+
+<body>
+    <script type="css-module" specifier="/foo.css">
+    #content { 
+        color: red; 
+    } 
+</script>
+
+    <my-element>
+        <template shadowrootmode="open" adoptedstylesheets="/foo.css">
+            <!-- ... -->
+        </template>
+    </my-element>
+</body>
+
+</html>

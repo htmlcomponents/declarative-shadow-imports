@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+
+<body>
+    <section>I’m in the light DOM</section>
+    <div id="host">
+        <template shadowrootmode="open">
+            <style id=”resets”>
+                section {
+                    border: medium dashed red;
+                }
+            </style>
+            <section>
+                I'm in the shadow DOM
+            </section>
+        </template>
+    </div>
+</body>
+
+</html>

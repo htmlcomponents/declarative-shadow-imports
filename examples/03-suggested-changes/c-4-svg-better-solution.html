@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c-4 svg better solution</title>
+</head>
+
+<body>
+    <svg width="0" height="0" export=”icons.svg” xmlns="http://www.w3.org/2000/svg">
+        <symbol id="home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+        </symbol>
+    </svg>
+
+    <icon-button>
+        <template shadowrootmode="open" import=”icons.svg”>
+            <button>
+                <svg width="1em" height="1em">
+                    <use href="#home"></use>
+                </svg>
+                <span>Home in shadow tree</span>
+            </button>
+        </template>
+    </icon-button>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b-3 specific element</title>
+</head>
+
+<body>
+
+    <template>
+        <style export="/component-resets.css">
+            button {
+                color: red;
+            }
+        </style>
+        <button export=”/custom-button.html'>
+            <span>👍 In shadow!</span>
+        </button>
+    </template>
+
+    <icon-button>
+        <template shadowrootmode="open">
+            <style import=”/component-resets.css” />
+            <h2>Button heading</h2>
+            <button import=”custom-button.html” />
+        </template>
+    </icon-button>
+
+
+</body>
+
+</html>

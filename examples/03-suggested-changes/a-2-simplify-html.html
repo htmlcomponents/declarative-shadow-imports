@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-2 simplify html</title>
+</head>
+
+<body>
+    <template export="/component.html>
+    <style">
+        button {
+        color: red;
+        }
+        </style>
+        <button>
+            <span>👍 In shadow!</span>
+        </button>
+    </template>
+
+    <icon-button>
+        <template shadowrootmode="open" import="/component.html">
+        </template>
+    </icon-button>
+    <!-- or -->
+    <icon-button import="/component.html">
+        <template shadowrootmode="open">
+        </template>
+    </icon-button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c-5 json</title>
+</head>
+
+<body>
+
+    <template>
+        <script type="application/json" export="/foo.json">
+        {
+            "title": "My title"
+        }
+    </script>
+    </template>
+
+    <my-element>
+        <template shadowrootmode="open">
+            <script type="application/json" import="/foo.json">
+        </script>
+            <p id="content">Shadow DOM content</p>
+        </template>
+    </my-element>
+
+</body>
+
+</html>

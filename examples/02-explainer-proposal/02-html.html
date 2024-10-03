@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-html</title>
+</head>
+
+<body>
+    <template type="module" specifier="/foo.html">
+        <!-- ... -->
+    </template>
+
+    <my-element>
+        <template shadowrootmode="open" shadowroothtml="/foo.html">
+        </template>
+    </my-element>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b-1 leverage template</title>
+</head>
+
+<body>
+    <template>
+        <style export="/foo.css">
+            #content {
+                color: red;
+            }
+        </style>
+    </template>
+
+    <my-element>
+        <template shadowrootmode="open" import="/foo.css">
+            <p id="content">Shadow DOM content</p>
+        </template>
+    </my-element>
+
+</body>
+
+</html>
